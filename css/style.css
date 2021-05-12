@@ -3,12 +3,16 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background: linear-gradient(#9CC0E7, white);
     margin: 0;
+}
+
+.work {
+    background: white;
 }
 
 .navigation {
@@ -25,6 +29,35 @@ body {
     width: 8%;
     padding: 1%;
 }
+
+.navbar-custom {
+    background-color: white;
+}
+
+.navbar-custom .navbar-text{
+    color: #0055A4;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #0055A4;
+}
+
+.navbar-custom .nav-item.active .nav-link{
+    color: #0055A4;
+}
+
+.navbar-custom .nav-item:hover .nav-link{
+    color: black;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 85, 164, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgba(0, 85, 164, 1);
+  } 
 
 nav {
     width: 100%;
@@ -47,6 +80,23 @@ nav li {
 }
 
 nav li:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #0055A4;
+}
+
+nav a:active {
+    color: black;
+}
+
+nav a:hover {
     text-decoration: underline;
     color: black;
 }
