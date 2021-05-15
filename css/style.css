@@ -101,13 +101,34 @@ nav a:hover {
     color: black;
 }
 
-
 #about, #skills, #work {
     margin-right: 4rem;
 }
 
 #contact {
     margin-right: 1rem;
+}
+
+.projects {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.tool-img {
+    width: 100%;
+    height: auto;
+}
+
+.tool-img img {
+    width: 20%;
+}
+
+.tools-skills {
+    margin-bottom: 2rem;
+}
+
+.tools {
+    margin-top: 1rem;
 }
 
 .site-content {
@@ -195,4 +216,14 @@ footer li {
 #linkedin:hover, #email:hover {
     background-color: #9CC0E7;
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin: auto;
+    }
+
+    .tool-img img {
+        width: 50%;
+    }
 }
